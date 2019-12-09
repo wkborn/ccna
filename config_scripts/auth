@@ -1,0 +1,24 @@
+//Assumes config global mode
+//ALL PASSWORDS ARE CISCO
+
+hostname **HOSTNAME HERE**
+ip domain-name **DOMAIN NAME HERE***
+
+enable secret cisco
+
+crypto key generate rsa
+1024
+
+line vty 0 4
+access-class 20 in
+transport input ssh
+password cisco
+login
+exit
+
+line con 0
+password cisco
+login
+exit
+
+service password-encryption
