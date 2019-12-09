@@ -6,6 +6,9 @@ ip domain-name **DOMAIN NAME HERE***
 
 enable secret cisco
 
+aaa new-model
+username cisco password 0 cisco
+
 crypto key generate rsa
 1024
 
