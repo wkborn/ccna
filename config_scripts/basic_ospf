@@ -6,13 +6,11 @@
 
 int g0/0
 ip addr 10.13.37.69 255.255.255.0
-ip nat outside
 no shut
 exit
 
 int g0/1
 ip addr 10.0.0.1 255.255.255.0
-ip nat inside
 no shut
 exit
 
