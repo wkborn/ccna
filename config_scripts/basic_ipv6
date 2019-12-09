@@ -7,13 +7,11 @@ ipv6 router ospf 1
 int g0/0
 ipv6 ospf 1 area 0
 ipv6 addr CAFE::2/16
-ipv6 addr fe80::1 link-local
 no shut
 
 int g0/1
 ipv6 ospf 1 area 0
 ipv6 CAFE:BABE::1/32
-ipv6 addr fe80::1 link-local
 no shut
 
 end
