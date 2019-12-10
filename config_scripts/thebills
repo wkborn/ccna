@@ -1,0 +1,40 @@
+//TIME
+clock set hh:mm:ss DAY MON YEAR
+
+conf t
+
+//HOSTNAME
+hostname **HOSTNAME HERE**
+
+//ENABLE PASSWORD
+enable secret cisco
+
+//BANNER
+banner motd :BANNER:
+
+//IP DOMAIN
+ip domain-name **DOMAIN NAME HERE***
+
+//LINE CON
+line con 0
+password cisco
+login
+exit
+
+//LINE VTY
+
+username cisco password 0 cisco
+
+crypto key generate rsa
+1024
+
+line vty 0 4
+access-class 20 in
+transport input ssh
+password cisco
+login
+exit
+
+//Service Password Encryption
+
+service password-encryption
