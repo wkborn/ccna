@@ -32,7 +32,7 @@ line vty 0 4
 access-class 20 in
 transport input ssh
 password cisco
-login
+login local
 exit
 
 //Service Password Encryption
